@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw4</title>
+    <script src="jquery-1.x-git(1).js"></script>
+    <script>
+        $(function () {
+            $("li").click(function () {
+                $(this).toggleClass("current");
+            })
+        });
+    </script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background-color: darkseagreen;
+            color: darkgreen;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .header{
+            width: 100%;
+            height: 15%;
+            background-color: lightyellow;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding-top: 3%;
+            border: darkgreen 5px solid;
+
+        }
+        .content{
+            width: 100%;
+            height: 68%;
+            margin: 1% auto;
+            border: darkgreen 5px solid;
+        }
+        .main{
+            background-color: lightyellow;
+            width: 70%;
+            height: 100%;
+            float: left;
+            border-radius: 5px;
+            padding-top: 2%;
+            box-sizing: border-box;
+        }
+        .main .blog{
+            margin-left: 2%;
+            text-align: center;
+        }
+        .main ul{
+            list-style: none;
+            height: 75%;
+            margin: 2% auto;
+        }
+        .main ul li{
+            height: 37%;
+            margin: 1% 2%;
+            padding: 1% 2%;
+            box-sizing: border-box;
+            text-align: left;
+            border-radius: 5px;
+            border: darkgreen 5px solid;
+        }
+        .summary{
+            font-size: 20px;
+            color: darkgreen;
+            width: 70%;
+            float: left;
+            margin-bottom: 1%;
+        }
+        .date{
+            float: right;
+            font-size: 14px
+        }
+        .img{
+            margin-top: 1%;
+            float: right;
+        }
+        .p{
+            display: none;
+        }
+        .current .summary{
+            display: none;
+        }
+        .current .p{
+            height: 100%;
+            width: 70%;
+            font-size: 18px;
+            display: block;
+            float: left;
+            overflow: auto;
+        }
+        .current .img{
+            float: right;
+        }
+        .nav{
+            background-color: darkseagreen;
+            width: 29%;
+            height: 100%;
+            float: right;
+            border-radius: 5px;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+        .nav .home{
+            color: black;
+            text-align: center;
+            margin-bottom: 1%;
+        }
+        .footer{
+            width: 100%;
+            height: 15%;
+            background-color: lightyellow;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding-top: 2%;
+            border: darkgreen 5px solid;
+        }
+    </style>
+
+</head>
+<body>
+<div class="header">
+    <h1>My Blog</h1>
+</div>
+<div class="content">
+    <div class="main">
+        <div class="blog">
+            <a href="hw1.html"><h1>Recently News</h1></a>
+        </div>
+        <ul>
+            <li>
+                <div class="summary">
+                    <p>Pink Moon set to illuminate the skies on Friday</p>
+                </div>
+                <div class="date">
+                    <p>Date: 04/18/2019</p>
+                </div>
+                <div class="p">
+                    Moon gazers be ready! April's full moon, known as the Pink Moon, is set to premiere on Friday.
+
+                    The moon will appear larger than average because it will be three days past perigee, the point in its orbit when it is nearest to Earth, according to Space.com.
+                    Although the name suggests the moon will appear a certain color, that is not true. Instead the moon is named pink after the color of wild ground phlox, one of the early spring flowers. Native Americans named the moons so they could keep track of their harvesting schedule.
+                </div>
+                <div class="img"><img src="imgs/p1.png" alt="pic" width="150px" height="95px" align="right"></div>
+            </li>
+            <li>
+                <div class="summary">
+                    <p>Hawaiian flower, thought extinct, rediscovered by a drone</p>
+
+                </div>
+                <div class="date">
+                    <p>Date: 04/18/2019</p>
+                </div>
+                <div class="p">
+                    (CNN)Researchers dispatched a drone into the Hawaiian skies to observe an extremely biodiverse area on a remote part of Kauai's Kalalau Valley. The scientists soon realized they had rediscovered a flower species that was thought to be extinct.
+
+                    According to a statement from the National Tropical Botanical Garden, Hibiscadelphus woodii was discovered on a vertical cliff face. Most sections of this area of the valley are inaccessible to humans because of the steep landscape.
+                    NTBG has been using drone technology for the past two and a half years to get a look at the unique flora.
+                </div>
+                <div class="img"><img src="imgs/p2.png" alt="pic" width="150px" height="95px" align="right"></div>
+
+            </li>
+            <li>
+                <div class="summary">
+                    <p>Dog found swimming 135 miles off the coast of Thailand</p>
+
+                </div>
+                <div class="date">
+                    <p>Date: 04/18/2019</p>
+                </div>
+                <div class="p">
+                    Bangkok (CNN)Workers on an oil rig some 135 miles (220 kilometers) off the coast of Thailand found an unexpected new friend swimming nearby: a dog.
+
+                    The brown canine was found paddling near the rig, cold and shivering, with no indication of how he got there.
+                    Rig worker Vitisak Payalaw, an offshore planner with Chevron, told CNN that fellow staff members spotted the dog swimming towards the platform on the afternoon of April 12, and held out a pole for him. But, buffeted by the waves, he was unable to climb up, his grasp repeatedly slipping
+                </div>
+                <div class="img"><img src="imgs/p3.png" alt="pic1" width="150px" height="95px" align="right"></div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="nav">
+        <div class="home"><a href="hw1.html"><h2>MY HOMEPAGE</h2></a></div>
+        <blockquote class="twitter-tweet" data-lang="zh-cn"><p lang="en" dir="ltr">Sleepy, shouty or satisfied? Which of these baby bears <a href="https://twitter.com/LakeClarkNPS?ref_src=twsrc%5Etfw">@LakeClarkNPS</a> is your spirit animal? <a href="https://twitter.com/hashtag/Alaska?src=hash&amp;ref_src=twsrc%5Etfw">#Alaska</a> <a href="https://twitter.com/hashtag/FindYourPark?src=hash&amp;ref_src=twsrc%5Etfw">#FindYourPark</a> <a href="https://t.co/mi9y11o1LV">pic.twitter.com/mi9y11o1LV</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/1119030339534577664?ref_src=twsrc%5Etfw">2019年4月19日</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+</div>
+<div class="footer">
+    <h6>Design by DanniHuang</h6>
+</div>
+</body>
+</html>
